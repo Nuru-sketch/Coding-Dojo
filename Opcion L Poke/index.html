@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Bowl</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="sidenav">
+            <img src="./img/logo.png">
+            <h2>About us</h2>
+            <h3>Menu</h3>
+            <h3>Catering</h3>
+            <h3>Hours</h3>
+            <h4>mon to fri 11 am - 10 pm <br>
+            sat 12 pm - 1 am <br>
+            sun 12 pm - 9 pm <br>
+            </h4>
+            <h3>Locations</h3>
+            <img src="./img/map.png" height="250px">
+            <h3 onclick="contact()">Contact us</h3>
+
+        </div>
+
+        <div class="content">
+            <div id="video">
+                <video src="./img/video.mp4" height="200px"></video>
+            </div>
+
+            <div id="maincontent">
+                <div id="macros">
+                    <div id="protein">
+                        <h3>1</h3>
+                        <h3>Choose your protein</h3>
+                        <h4 onmouseover="protein()"></h4>
+                    </div>
+                </div>
+                <div id="concept">
+                    <div id="head">
+                        <h3>Poke</h3>
+                        <img src="./img/pronounciation.png" height="20px">
+                    </div>
+                    <h4>noun</h4>
+                    <p>A popular hawaiian dish of marinated,diced raw fish served over rice</p>
+                    <img src="./img/sound-dark.png" height="30px" onclick="sound('play')">
+                    <audio src="./img/poke.mp3" id="poke"></audio>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

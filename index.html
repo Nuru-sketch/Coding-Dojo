@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="#" id="home">Gaming</a>
+        <a href="#" id="home2">Dojo</a>
+        <div id="navoptions">
+            <select>
+                <option>Euro €</option>
+                <option>USD $</option>
+                <option>PY ₲</option>
+            </select>
+            <img src="./Opcion M Gaming Dojo/img/cart-light.png" height="30px" id="cart">
+            <input type="number" height="20px" value="0" id="items">
+            <img src="./Opcion M Gaming Dojo/img/search-light.png" height="30px" id="lupa">
+        </div>
+    </nav>
+    <div id="bannercontainer">
+    <h1 id="titulo">Highlights</h1>
+        
+        <div class="maincontainer">
+            <img src="./Opcion M Gaming Dojo/img/chevron-left.png" onclick="cambiarjuego(-1)" class="arrow"
+                height="70px">
+            <div id="banner">
+                <img src="./Opcion M Gaming Dojo/img/cafe-neko.png" height="250px" class="destacado">
+                <img src="./Opcion M Gaming Dojo/img/pixel-ninjas-2.png" height="250px" class="destacado">
+                <img src="./Opcion M Gaming Dojo/img/stonepunk.png" height="250px" class="destacado">
+            </div>
+            <img src="./Opcion M Gaming Dojo/img/chevron-left.png" id="rarrow" onclick="cambiarjuego(+1)" class="arrow"
+                height="70px">
+        </div>
+        <div class="bar">
+            <div style="text-align:center">
+                <span class="dot" onclick="posiciondot(1)"></span>
+                <span class="dot" onclick="posiciondot(2)"></span>
+                <span class="dot" onclick="posiciondot(3)"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="gamescontainer">
+        <div id="game1" class="games">
+            <img src="./Opcion M Gaming Dojo/img/cafe-neko.png" height="150px" class="gamesimg">
+            <div class="description">
+                <h1>Cafe Neko:Gold Edition</h1>
+                <img src="./Opcion M Gaming Dojo/img/apple.png" height="20px">
+                <img src="./Opcion M Gaming Dojo/img/windows.png" height="20px">
+            </div>
+            <div class="options">
+                <div class="discount">
+                    <h3>-20%</h3>
+                </div>
+                <div>
+                    <h3 class="oldprice">€14.98</h3>
+                    <h3>€10.94</h3>
+                </div>
+                <input type="button" value="Buy" class="buy" onclick="buythis()">
+            </div>
+
+        </div>
+        <div id="game2" class="games">
+            <img src="./Opcion M Gaming Dojo/img/pixel-ninjas-2.png" height="150px" class="gamesimg">
+            <h1>Pixel Ninjas 2</h1>
+            <div class="description">
+                <img src="./Opcion M Gaming Dojo/img/apple.png" height="20px">
+                <img src="./Opcion M Gaming Dojo/img/windows.png" height="20px">
+            </div>
+            <div class="options">
+                <div class="discount">
+                    <h3>-10%</h3>
+                </div>
+                <div>
+                    <h3 class="oldprice">€8.19</h3>
+                    <h3>€7.39</h3>
+                </div>
+                <input type="button" value="Buy" class="buy" onclick="buythis()">
+            </div>
+
+        </div>
+        <div id="game3" class="games">
+            <img src="./Opcion M Gaming Dojo/img/stonepunk.png" height="150px" class="gamesimg">
+            <h1>StonePunk 10000 BCE</h1>
+            <div class="description">
+                <img src="./Opcion M Gaming Dojo/img/apple.png" height="20px">
+                <img src="./Opcion M Gaming Dojo/img/windows.png" height="20px">
+                <img src="./Opcion M Gaming Dojo/img/linux.png" height="20px" id="linux"
+                    onclick="supported_on_linux(this)">
+            </div>
+            <div class="options">
+                <div class="discount">
+                    <h3>NEW</h3>
+                </div>
+                <div>
+                    <h3>€19.99</h3>
+                </div>
+                <input type="button" value="Buy" class="buy" onclick="buythis()">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
